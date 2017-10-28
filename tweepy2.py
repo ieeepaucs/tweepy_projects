@@ -31,7 +31,7 @@ myStreamListener=MyStreamListener()
 #tweepy kutuphanesının StreamListener Class'ının Constructoruna API nesnesi ve bizim kendi olusturdugumuz class'ın objesını yolluyoruz
 myStream=tweepy.Stream(auth=api.auth,listener=myStreamListener)
 #myStream objesinin filter methoduna track(takip[filtreleyecegi] edecegi kelime) async=True kısmı ise programın thread kullanarak daha hızlı calısmasını saglıyor
-myStream_tmp=myStream.filter(track=['england'],async=True)
+myStream_tmp=myStream.filter(track=['#paucscoding'],async=True)
 
 #mertongngl
 
